@@ -42,7 +42,10 @@ export default function Footer() {
           <Text sx={styles.footer.copyright}>
             Copyright &copy; {new Date().getFullYear()} IDS Media Network
           </Text>
-       
+                
+        <Text>
+            Co-Developed at sudipsudipsudip
+          </Text>
           
         </Box>
       </Container>
