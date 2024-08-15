@@ -9,7 +9,7 @@ export default function Banner() {
       <Container sx={styles.banner.container}>
         <Box sx={styles.banner.contentBox}>
           <Heading as="h1" variant="heroPrimary">
-            The Media Friend <br /> you can TRUST
+            The Media Friend <br /> You Can TRUST
           </Heading>
           <Text as="p" variant="heroSecondary">
             At our core, we are passionate about uncovering the hidden narratives and addressing the topics that often go unexplored. Our mission is to foster open discussions.
