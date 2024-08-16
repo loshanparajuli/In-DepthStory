@@ -44,7 +44,7 @@ export default function Footer() {
           </Text>
                 
         <Text>
-            Co-Developed at <link_goes_here>
+            Co-Developed at link_goes_here
           </Text>
           
         </Box>
