@@ -78,7 +78,7 @@ const data = [
     imgSrc: Member4,
     altText: 'Suraj Poudel',
     title: 'Suraj Poudel',
-    designation: 'User Experience',
+    designation: 'Visual Specialist',
     socialProfile: [
   
       {
@@ -134,12 +134,6 @@ const data = [
         name: 'linkediin',
         path: 'https://www.linkedin.com/in/loshanparajuli/',
         icon: <FaLinkedin />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: 'https://www.instagram.com/whylosh/',
-        icon: <FaInstagram />,
       },
       {
         id: 3,
