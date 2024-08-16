@@ -14,7 +14,8 @@ import TeamSection from 'sections/team-section';
 import TestimonialCard from 'sections/testimonial';
 import BlogSection from 'sections/blog-section';
 import Subscribe from 'sections/subscribe';
-// import Sub from 'sections/sub';
+import Yellobook from 'components/yellowbook';
+
 
 export default function Home() {
   return (
@@ -22,6 +23,7 @@ export default function Home() {
       <StickyProvider>
         <Layout>
           <Banner/>
+          <Yellobook/>
           <KeyFeature />
           <ServiceSection />
           {/* <Feature/> */}
