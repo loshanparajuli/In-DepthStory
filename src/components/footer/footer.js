@@ -44,7 +44,7 @@ export default function Footer() {
           </Text>
                 
         <Text>
-            Co-Developed at sudipsudipsudip
+            Co-Developed at <link_goes_here>
           </Text>
           
         </Box>
@@ -124,7 +124,7 @@ const styles = {
       p: {
         fontSize: [1, '15px'],
         fontWeight: 400,
-        lineHeight: 2,
+        lineHeight: 1.2,
       },
     },
   },
