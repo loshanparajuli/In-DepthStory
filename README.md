@@ -3,6 +3,7 @@ Official website for IDS Media Network
 
 ## Description
 This is a website designed for IDS Media Newtork
+V2 will include Timedown counter and the ability to download few files with just the click. The Timedown counter will be dynamic based on your TimeZone
 
 [Live demo here!](https://idsmedia.com.np/)
 
