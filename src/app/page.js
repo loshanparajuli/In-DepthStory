@@ -24,6 +24,7 @@ export default function Home() {
       <StickyProvider>
         <Layout>
           <Banner/>
+          <Marquee />
           <Yellobook/>
           <KeyFeature />
           <ServiceSection />
