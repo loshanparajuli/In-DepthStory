@@ -15,6 +15,7 @@ import TestimonialCard from 'sections/testimonial';
 import BlogSection from 'sections/blog-section';
 import Subscribe from 'sections/subscribe';
 import Yellobook from 'components/yellowbook';
+import Marquee from 'components/marquee';
 
 
 export default function Home() {
