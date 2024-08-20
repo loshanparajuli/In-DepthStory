@@ -19,7 +19,6 @@ const fetchData = async () => {
     designation: row.designation,
     startDate: new Date(row.startDate),
     endDate: new Date(row.endDate),
-    
   }));
 };
 
@@ -146,7 +145,13 @@ function ReviewCard({ item }) {
       `}</style>
       <Box sx={styles.imageContainer}>
         {item.avatar ? (
-          <Image src={item.avatar} alt={item.name || 'Client Image'} width={100} height={100} />
+          <Image
+            src={item.avatar}
+            alt={item.name || 'Client Image'}
+            width={100}
+            height={100}
+            style={{ borderRadius: '50%' }}
+          />
         ) : (
           <Text>No Image Available</Text>
         )}
@@ -204,6 +209,8 @@ const styles = {
   reviewCard: {
     display: 'flex',
     flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
     width: ['100%', null, null, '95%', '90%'],
     boxShadow: '0px 0px 1px rgba(38, 78, 118, 0.35)',
     transition: 'all 0.3s',
@@ -217,30 +224,41 @@ const styles = {
     },
   },
   imageContainer: {
-    width: '25%',
+    width: '100px', // Fixed size for consistency
+    height: '100px', // Fixed size for consistency
+    flexShrink: 0,
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    overflow: 'hidden',
+    borderRadius: '50%', // Rounded corners
     img: {
       width: '100%',
-      height: 'auto',
+      height: '100%',
       objectFit: 'cover',
       transition: 'all 0.3s ease',
     },
   },
   textContainer: {
-    width: '75%',
+    width: 'calc(100% - 120px)', // Adjusting for the fixed size of the imageContainer plus padding
     paddingLeft: '20px',
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
   },
-  title: {
+  heading: {
     fontSize: [2, 3],
     fontWeight: 700,
     mb: '10px',
     color: 'text',
     lineHeight: 1.6,
+  },
+  title: {
+    fontSize: [1, 2],
+    fontWeight: 600,
+    mb: '5px',
+    color: 'text',
+    lineHeight: 1.4,
   },
   designation: {
     color: 'primary',
