@@ -1,7 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
-  distDir: "dist",
-};
+  images: {
+    domains: ['imagekit.io', 'w0.peakpx.com'], // aaru external domain ko naam haru
+  },
+}
 
-module.exports = nextConfig;
+module.exports = nextConfig
