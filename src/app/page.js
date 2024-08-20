@@ -2,7 +2,7 @@
 import { ThemeUIProvider } from 'theme-ui';
 import theme from 'theme';
 import { StickyProvider } from '../contexts/app/app.provider';
-import { SpeedInsights } from "@vercel/speed-insights/next"
+
 import Banner from 'sections/banner';
 import Layout from 'components/layout';
 import KeyFeature from 'sections/key-feature';
