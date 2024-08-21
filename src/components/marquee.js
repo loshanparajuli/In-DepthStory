@@ -4,6 +4,7 @@ import SectionHeader from 'components/section-header';
 import Carousel from 'react-multi-carousel';
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
+import { PulseLoader } from 'react-spinners';  // Importing PulseLoader from react-spinners
 
 const csvUrl = process.env.NEXT_PUBLIC_CSV_URL;
 
@@ -73,9 +74,13 @@ const responsive = {
 
 export default function TestimonialCard() {
   const [data, setData] = useState([]);
+  const [loading, setLoading] = useState(true); // State to manage loading
 
   useEffect(() => {
-    fetchData().then(setData);
+    fetchData().then((fetchedData) => {
+      setData(fetchedData);
+      setLoading(false); // Stop loading once data is fetched
+    });
   }, []);
 
   return (
@@ -84,7 +89,11 @@ export default function TestimonialCard() {
         <SectionHeader slogan="Covering the uncovered" title="Meet those FAKE Promises" />
       </Container>
       <Box sx={styles.carouselWrapper}>
-        {data.length > 0 ? (
+        {loading ? (
+          <Box sx={styles.loaderContainer}>
+            <PulseLoader color="#00BFFF" loading={loading} size={15} />
+          </Box>
+        ) : (
           <Carousel
             additionalTransfrom={0}
             arrows={false}
@@ -107,8 +116,6 @@ export default function TestimonialCard() {
               <ReviewCard key={`testimonial--key${item.id}`} item={item} />
             ))}
           </Carousel>
-        ) : (
-          <Text>Loading...</Text>
         )}
       </Box>
     </Box>
@@ -206,6 +213,13 @@ const styles = {
       },
     },
   },
+  loaderContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100%', // Ensure the loader covers the entire area
+    minHeight: '300px', // Optional: Set a minimum height
+  },
   reviewCard: {
     display: 'flex',
     flexDirection: 'row',
@@ -247,34 +261,36 @@ const styles = {
     justifyContent: 'center',
   },
   heading: {
-    fontSize: [2, 3],
+    fontSize: 2,
     fontWeight: 700,
-    mb: '10px',
+    mb: '5px',
+    lineHeight: 1.6,
+    color: 'heading',
+  },
+  title: {
+    fontSize: 1,
+    fontWeight: 500,
+    mb: '5px',
     color: 'text',
     lineHeight: 1.6,
   },
-  title: {
-    fontSize: [1, 2],
-    fontWeight: 600,
-    mb: '5px',
-    color: 'text',
-    lineHeight: 1.4,
-  },
   designation: {
-    color: 'primary',
+    fontSize: 0,
     fontWeight: 500,
-    fontSize: 1,
-    lineHeight: 1.4,
     mb: '10px',
+    color: 'primary',
+    lineHeight: 1.6,
   },
   boldText: {
+    fontSize: 2,
     fontWeight: 700,
-    textAlign: 'right',
-    mb: '5px',
+    color: 'heading',
+    mb: '10px',
   },
   timer: {
-    textAlign: 'right',
-    fontWeight: 'bold',
-    fontSize: [2, 3],
+    fontSize: 1,
+    fontWeight: 500,
+    lineHeight: 1.6,
   },
 };
+
