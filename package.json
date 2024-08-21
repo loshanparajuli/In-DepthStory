@@ -1,6 +1,6 @@
 {
   "name": "`ids",
-  "version": "1.1",
+  "version": "1.1.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -23,6 +23,8 @@
     "sharp": "^0.33.5",
     "theme-ui": "^0.16.1",
     "papaparse": "^5.4.1" ,
-     "react-multi-carousel": "^2.8.3"  
+    "react-loader-spinner": "^6.1.6",
+    "react-spinners": "^0.14.1",
+    "react-multi-carousel": "^2.8.3"  
   }
 }
