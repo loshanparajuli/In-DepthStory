@@ -45,7 +45,7 @@ const styles = {
   },
   title: {
     fontSize: ['24px', null, '28px', null, null, '32px', null, '36px'],
-    color: 'white',
+    color: 'red',
     lineHeight: [1.3, null, null, 1.25],
     fontWeight: '700',
     letterSpacing: ['-.5px', null, '-1.5px'],
