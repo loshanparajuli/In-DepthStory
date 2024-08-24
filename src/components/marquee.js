@@ -229,10 +229,10 @@ const styles = {
     boxShadow: '0px 0px 1px rgba(38, 78, 118, 0.35)',
     transition: 'all 0.3s',
     borderRadius: '6px',
-    p: ['30px 20px', '35px 30px'],
+    p: ['15px 10px', '20px 15px'], // Reduced padding values to decrease space inside the card
     bg: 'white',
     textAlign: 'left',
-    m: '20px auto',
+    m: '5px auto', // Reduced margin to decrease space outside the card
     '&:hover': {
       boxShadow: '0px 6px 30px rgba(38, 78, 118, 0.1)',
     },
