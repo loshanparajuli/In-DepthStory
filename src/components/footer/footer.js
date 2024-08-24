@@ -43,6 +43,18 @@ export default function Footer() {
             Copyright &copy; {new Date().getFullYear()} IDS Media Network
           </Text>
 
+                <Text>
+    Co-Developed at{' '}
+    <a 
+      href="https://www.youtube.com/whylosh" 
+      target="_blank" 
+      rel="noopener noreferrer"
+      style={{ color: 'red'}}
+    >
+      whyDocs
+    </a>
+  </Text>
+        
                  
       
         </Box>
@@ -58,7 +70,7 @@ const styles = {
       borderTopColor: 'border_color',
       display: 'flex',
       pt: [7, null, 8],
-      pb: ['20px', null, '50px'],
+      pb: ['10px', null, '30px'],
       textAlign: 'center',
       flexDirection: 'column',
     },
