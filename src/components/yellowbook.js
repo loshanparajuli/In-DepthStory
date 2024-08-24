@@ -36,7 +36,7 @@ const styles = {
     boxShadow: 'none',
     transition: 'all 0.3s',
     borderRadius: '6px',
-    p: ['15px', '20px'], // Adjusted padding values
+ p: ['20px 15px', '45px 15px']
     bg: 'white',
     textAlign: 'center',
     m: '20px auto',
