@@ -5,7 +5,7 @@ import { StickyProvider } from '../contexts/app/app.provider';
 
 import Banner from 'sections/banner';
 import Layout from 'components/layout';
-// import KeyFeature from 'sections/key-feature';
+
 import ServiceSection from 'sections/service-section';
 import Feature from 'sections/feature';
 import CoreFeature from 'sections/core-feature';
@@ -27,7 +27,7 @@ export default function Home() {
           <Banner/>
           <Marquee />
           <Yellobook/>
-          // <KeyFeature />
+      
           <ServiceSection />
           {/* <Feature/> */}
           {/* <CoreFeature/> */}
