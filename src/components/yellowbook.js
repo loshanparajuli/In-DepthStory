@@ -13,7 +13,7 @@ export default function Yellobook() {
           <Box sx={styles.contentBox}>
             <Heading as="h2" sx={styles.title}>
               <span style={{ fontWeight: 'bold', color: 'red' }}>
-                text1 संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
+               संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
               </span>
             </Heading>
             <Button
