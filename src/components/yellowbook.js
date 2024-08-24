@@ -1,27 +1,27 @@
-import { Container, Box, Button, Text, Heading } from 'theme-ui';
+import { Container, Box, Button, Heading } from 'theme-ui';
 
 export default function Yellobook() {
   const openPDF = () => {
-    const pdfUrl = 'https://drive.google.com/file/d/1u8JtXZLSK5jVxRctMl3ykzYrXEulnCKB/view?usp=sharing'; // paxi yeha, cloud mai host gareko link rakhni
+    const pdfUrl = 'https://drive.google.com/file/d/1u8JtXZLSK5jVxRctMl3ykzYrXEulnCKB/view?usp=sharing';
     window.open(pdfUrl, '_blank');
   };
 
   return (
     <Box>
       <Container>
-        <Box sx={styles.contentBox}>
-          <Box sx={styles.contentBoxInner}>
-            <br></br>
+        <Box sx={styles.cardWrapper}>
+          <Box sx={styles.contentBox}>
             <Heading as="h2" sx={styles.title}>
-             संघीय संसद सचिवालय:हामीले रोजेका प्रतिनिधिको सम्पर्क नम्बर 
+              <span style={{ fontWeight: 'bold', color: 'red' }}>
+                text1 संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
+              </span>
             </Heading>
-           
             <Button
               onClick={openPDF}
               sx={styles.openPdfButton}
               aria-label="Open PDF"
             >
-             Telephone Directory (PDF)
+              Telephone Directory (PDF)
             </Button>
           </Box>
         </Box>
@@ -31,31 +31,28 @@ export default function Yellobook() {
 }
 
 const styles = {
-  contentBox: {
-  
+  cardWrapper: {
+    boxShadow: 'none',
+    transition: 'all 0.3s',
+    borderRadius: '6px',
+    p: ['30px 20px', '35px 30px'],
+    bg: 'white',
     textAlign: 'center',
-    borderRadius: 10,
-    py: ['60px', null, 8],
-  },
-  contentBoxInner: {
+    m: '20px auto',
     width: ['100%', null, '540px', '600px'],
-    mx: 'auto',
-    mt: -1,
-    px: [3, 5],
+    '&:hover': {
+      boxShadow: '0px 6px 30px rgba(38, 78, 118, 0.1)',
+    },
+  },
+  contentBox: {
+    textAlign: 'center',
   },
   title: {
     fontSize: ['24px', null, '28px', null, null, '32px', null, '36px'],
-    color: 'red',
     lineHeight: [1.3, null, null, 1.25],
-    fontWeight: '700',
+    fontWeight: 'normal', // Ensuring text is not bold by default
     letterSpacing: ['-.5px', null, '-1.5px'],
     mb: [2, 3],
-  },
-  description: {
-    fontSize: ['15px', 2, null, null, null, '17px', null, 3],
-    color: 'white',
-    lineHeight: [1.85, null, null, 2],
-    px: [0, null, 5],
   },
   openPdfButton: {
     mt: [6, null, null, 7],
