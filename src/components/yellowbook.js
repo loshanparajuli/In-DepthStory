@@ -13,7 +13,7 @@ export default function Yellobook() {
           <Box sx={styles.contentBox}>
             <Heading as="h2" sx={styles.title}>
               <span style={{ fontWeight: 'bold', color: 'red' }}>
-               संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
+                संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
               </span>
             </Heading>
             <Button
@@ -35,7 +35,7 @@ const styles = {
     boxShadow: 'none',
     transition: 'all 0.3s',
     borderRadius: '6px',
-    p: ['30px 20px', '35px 30px'],
+    p: ['20px 15px', '25px 20px'], // Reduced padding values
     bg: 'white',
     textAlign: 'center',
     m: '20px auto',
