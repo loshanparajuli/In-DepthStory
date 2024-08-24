@@ -51,7 +51,7 @@ export default function Footer() {
       rel="noopener noreferrer"
       style={{ color: 'red'}}
     >
-      whyDocs
+      whyl
     </a>
   </Text>
         
