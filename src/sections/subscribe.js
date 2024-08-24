@@ -81,7 +81,7 @@ export default function Subscribe() {
               Got something in mind? We are listening to your ideas
             </Heading>
             <Text as="p" sx={styles.description}>
-              Maan ma kei video or content idea chha bhane, do let us know. Hami tesko babbal video banaidinchauu.
+            Share it with us, and we guarantee it'll be heard! The scope and the domain of the project shall remain limitless. We are listening
             </Text>
             <form onSubmit={subscribe}>
               <Flex sx={styles.subscribeForm}>
@@ -108,7 +108,7 @@ export default function Subscribe() {
                   className="subscribe__btn"
                   aria-label="Send"
                 >
-                  {!status.submitting ? (!status.submitted ? 'Send' : 'Sent') : 'Sending...'}
+                  {!status.submitting ? (!status.submitted ? 'Send' : 'Sent') : 'हेल्लो हुलाक...'}
                 </Button>
               </Flex>
             </form>
