@@ -81,7 +81,7 @@ export default function Subscribe() {
               Got something in mind? We are listening to your ideas
             </Heading>
             <Text as="p" sx={styles.description}>
-            Share it with us, and we guarantee it'll be heard! The scope and the domain of the project shall remain limitless. We are listening
+            Share it with us, and we guarantee it'll be heard! The scope and the domain of the project shall remain limitless.
             </Text>
             <form onSubmit={subscribe}>
               <Flex sx={styles.subscribeForm}>
