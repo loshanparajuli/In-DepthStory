@@ -58,7 +58,7 @@ const styles = {
       borderTopColor: 'border_color',
       display: 'flex',
       pt: [7, null, 8],
-      pb: ['40px', null, '100px'],
+      pb: ['20px', null, '50px'],
       textAlign: 'center',
       flexDirection: 'column',
     },
