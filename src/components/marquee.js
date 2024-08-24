@@ -192,7 +192,7 @@ const styles = {
     justifyContent: 'flex-end',
     flexDirection: 'column',
     alignItems: 'flex-end',
-    mt: '-30px',
+    mt: '-10px',
     px: '15px',
     '.carousel-container': {
       width: '100%',
