@@ -126,7 +126,7 @@ const data = [
     imgSrc: Member6,
     altText: 'Loshan Parajuli',
     title: 'Loshan Parajuli',
-    designation: 'Data Analyist',
+    designation: 'Data Analyst',
     socialProfile: [
      
       {
