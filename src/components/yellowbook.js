@@ -15,9 +15,7 @@ export default function Yellobook() {
               <span style={{ fontWeight: 'bold', color: 'red', fontSize: '32px' }}>
                 संघीय संसद सचिवालय<br />
               </span>
-              <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>
-                प्रतिनिधिको सम्पर्क नम्बर
-              </span>
+             
             </Heading>
             <Button
               onClick={openPDF}
