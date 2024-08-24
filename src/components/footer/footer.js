@@ -43,18 +43,7 @@ export default function Footer() {
             Copyright &copy; {new Date().getFullYear()} IDS Media Network
           </Text>
 
-                  <Text>
-    Co-Developed at{' '}
-    <a 
-      href="https://www.youtube.com/@whylosh" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      style={{ color: 'red'}}
-    >
-      Developer
-    </a>
-  </Text>
-                
+                 
       
         </Box>
       </Container>
