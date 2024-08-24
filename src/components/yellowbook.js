@@ -12,8 +12,11 @@ export default function Yellobook() {
         <Box sx={styles.cardWrapper}>
           <Box sx={styles.contentBox}>
             <Heading as="h2" sx={styles.title}>
-              <span style={{ fontWeight: 'bold', color: 'red' }}>
-                संघीय संसद सचिवालय, प्रतिनिधिको सम्पर्क नम्बर
+              <span style={{ fontWeight: 'bold', color: 'red', fontSize: '32px' }}>
+                संघीय संसद सचिवालय<br />
+              </span>
+              <span style={{ fontWeight: 'bold', color: 'black', fontSize: '18px' }}>
+                प्रतिनिधिको सम्पर्क नम्बर
               </span>
             </Heading>
             <Button
@@ -35,7 +38,7 @@ const styles = {
     boxShadow: 'none',
     transition: 'all 0.3s',
     borderRadius: '6px',
-    p: ['20px 15px', '25px 20px'], // Reduced padding values
+    p: ['15px', '20px'], // Adjusted padding values
     bg: 'white',
     textAlign: 'center',
     m: '20px auto',
@@ -46,16 +49,17 @@ const styles = {
   },
   contentBox: {
     textAlign: 'center',
+    mb: [3, 4], // Reduced margin-bottom value
   },
   title: {
     fontSize: ['24px', null, '28px', null, null, '32px', null, '36px'],
     lineHeight: [1.3, null, null, 1.25],
     fontWeight: 'normal', // Ensuring text is not bold by default
     letterSpacing: ['-.5px', null, '-1.5px'],
-    mb: [2, 3],
+    mb: [1, 2], // Reduced margin-bottom value
   },
   openPdfButton: {
-    mt: [6, null, null, 7],
+    mt: [4, null, null, 5], // Reduced margin-top value
     backgroundColor: 'primary',
     color: 'white',
     borderRadius: '5px',
