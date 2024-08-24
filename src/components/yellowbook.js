@@ -13,7 +13,7 @@ export default function Yellobook() {
           <Box sx={styles.contentBoxInner}>
             <br></br>
             <Heading as="h2" sx={styles.title}>
-              Check out MP ko phone number haru
+             संघीय संसद सचिवालय:हामीले रोजेका प्रतिनिधिको सम्पर्क नम्बर 
             </Heading>
            
             <Button
@@ -21,7 +21,7 @@ export default function Yellobook() {
               sx={styles.openPdfButton}
               aria-label="Open PDF"
             >
-              राष्ट्रिय सभा नेपाल sadashya ko phone number
+             Telephone Directory (PDF)
             </Button>
           </Box>
         </Box>
