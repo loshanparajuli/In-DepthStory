@@ -32,7 +32,7 @@ export default function Banner() {
               variant="primary"
               onClick={() => window.location.href = 'https://discord.gg/fRQC6n32Kz'}
             >
-              <span style={{ marginLeft: '8px' }}>Join Discord</span>
+              <span style={{ marginLeft: '8px' }}>Join our Community</span>
             </Button>
           </Box>
         </Box>
