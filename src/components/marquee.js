@@ -86,7 +86,7 @@ export default function TestimonialCard() {
   return (
     <Box id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
-        <SectionHeader slogan="Covering the uncovered" title="Meet those FAKE Promises" />
+        <SectionHeader slogan="Covering the uncovered" title="Meet with FALSE Promises" />
       </Container>
       <Box sx={styles.carouselWrapper}>
         {loading ? (
