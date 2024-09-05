@@ -1,5 +1,4 @@
 import { Inter } from 'next/font/google'
-import { Analytics } from '@vercel/analytics/react';
 import 'react-multi-carousel/lib/styles.css';
 import 'rc-drawer/assets/index.css';
 const inter = Inter({ subsets: ['latin'] })
