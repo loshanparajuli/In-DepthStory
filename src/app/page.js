@@ -25,14 +25,15 @@ export default function Home() {
       <StickyProvider>
         <Layout>
           <Banner/>
-          <Marquee />
+          <Package/> 
+          <Marquee/>
           <Yellobook/>
       
           <ServiceSection />
           {/* <Feature/> */}
           {/* <CoreFeature/> */}
           {/* <WorkFlow/> */}
-          {/* <Package/> */}
+    
           <TeamSection/>
           <TestimonialCard/>
           {/* <BlogSection/> */}
