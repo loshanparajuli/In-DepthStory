@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import 'react-multi-carousel/lib/styles.css';
 import 'rc-drawer/assets/index.css';
 const inter = Inter({ subsets: ['latin'] })
@@ -13,7 +14,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       {children} 
-
+      <SpeedInsights/>
       </body>
       </html>
    
