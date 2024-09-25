@@ -4,7 +4,9 @@ import SectionHeader from 'components/section-header';
 import Carousel from 'react-multi-carousel';
 import Papa from 'papaparse';
 
-const csvUrl = process.env.csvUrl_links;
+const csvUrl_links = 'https://docs.google.com/spreadsheets/d/18MqgA0DdA6EefjPHQnoMCVWOSfhyxEY0uPJQYyV0ihQ/pub?gid=0&single=true&output=csv';
+
+
 
 const responsive = {
   desktop: {
@@ -50,7 +52,7 @@ export default function VideoCarousel() {
   return (
     <Box id="videos" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
-        <SectionHeader slogan="Our Videos" title="Our Authentic Content on the Internet" />
+        <SectionHeader slogan="Our Recent Videos" title="Most Authentic and Credible Content on the Internet" />
       </Container>
       <Box sx={styles.carouselWrapper}>
         <Carousel
