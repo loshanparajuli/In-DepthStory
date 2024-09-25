@@ -1,5 +1,4 @@
 import { Container, Box, Text } from 'theme-ui';
-import Carousel from 'react-multi-carousel';
 import { useState, useEffect } from 'react';
 import Papa from 'papaparse';
 import { PulseLoader } from 'react-spinners';
@@ -9,7 +8,7 @@ const csvUrl = 'https://docs.google.com/spreadsheets/d/1aKgyCC-TJPx-tC7JX-UNKXRE
 const fetchData = async () => {
   const response = await fetch(csvUrl);
   const csvData = await response.text();
-  const parsedData = Papa.parse(csvData, { header: false }).data; // No headers as per your CSV structure
+  const parsedData = Papa.parse(csvData, { header: false }).data;
   return parsedData.map((row, index) => ({
     id: index,
     text: row[0],
@@ -17,40 +16,35 @@ const fetchData = async () => {
   }));
 };
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1619 },
-    items: 3,
-  },
-  laptop: {
-    breakpoint: { max: 1619, min: 1024 },
-    items: 2,
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 640 },
-    items: 1,
-  },
-  mobile: {
-    breakpoint: { max: 639, min: 0 },
-    items: 1,
-  },
-};
-
 export default function TestimonialCard() {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [fadeOut, setFadeOut] = useState(false);
 
   useEffect(() => {
     fetchData().then((fetchedData) => {
       setData(fetchedData);
       setLoading(false);
     });
-  }, []);
+
+    const interval = setInterval(() => {
+      setFadeOut(true); // Trigger fade out
+      setTimeout(() => {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % data.length);
+        setFadeOut(false); // Trigger fade in
+      }, 300); // Match this delay with the CSS transition duration
+    }, 5000); // Change text every 5 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, [data.length]); // Depend on data length to avoid issues
 
   return (
     <Box id="testimonial" sx={{ variant: 'section.testimonial' }}>
       <Container css={{ textAlign: 'center' }}>
-        <Text as="h2" sx={{ mb: 4 }}>Recent News</Text>
+        <Text as="h1" sx={styles.headline}>
+          Latest News
+        </Text>
       </Container>
       <Box sx={styles.carouselWrapper}>
         {loading ? (
@@ -58,44 +52,48 @@ export default function TestimonialCard() {
             <PulseLoader color="#00BFFF" loading={loading} size={15} />
           </Box>
         ) : (
-          <Carousel
-            additionalTransfrom={0}
-            arrows={false}
-            autoPlaySpeed={3000}
-            infinite={true}
-            responsive={responsive}
-            slidesToSlide={1}
-          >
-            {data.map((item) => (
-              <TextCardItem key={item.id} item={item} />
-            ))}
-          </Carousel>
+          <TextCardItem item={data[currentIndex]} fadeOut={fadeOut} />
         )}
       </Box>
     </Box>
   );
 }
 
-function TextCardItem({ item }) {
+function TextCardItem({ item, fadeOut }) {
   return (
     <Text
       as="div"
-      sx={styles.card}
+      sx={{
+        ...styles.card,
+        opacity: fadeOut ? 0 : 1,
+        transition: 'opacity 0.3s ease-in-out',
+        textAlign: 'center',
+      }}
       onMouseEnter={(e) => (e.currentTarget.style.cursor = 'pointer')}
-      onClick={() => window.open(item.link, '_blank')}
+      onClick={() => item.link && window.open(item.link, '_blank')}
     >
-      {item.text}
+      {item ? item.text : ''} {/* Display text only if item is defined */}
     </Text>
   );
 }
 
 const styles = {
+  headline: {
+    fontSize: '3rem',
+    fontWeight: 700,
+    mb: 4,
+    lineHeight: 1.2,
+    color: 'red', // Changed color to red
+    textAlign: 'center',
+    fontStyle: 'italic', // Made italic
+  },
   carouselWrapper: {
     display: 'flex',
     justifyContent: 'center',
-    flexDirection: 'column',
-    alignItems: 'center',
+    overflow: 'hidden',
+    whiteSpace: 'nowrap',
     mt: '20px',
+    p: '10px 0',
   },
   loaderContainer: {
     display: 'flex',
@@ -106,15 +104,19 @@ const styles = {
   },
   card: {
     cursor: 'pointer',
-    fontSize: 3,
-    fontWeight: 700, // Making the text bold
-    margin: '10px 0',
+    fontSize: '2rem', // Made the text smaller
+    fontWeight: 700,
+    margin: '0 20px',
     padding: '15px',
     borderRadius: '6px',
-    textAlign: 'center',
+    backgroundColor: 'white',
     transition: 'color 0.3s',
+    display: 'inline-block',
+    lineHeight: '1.4', // Ensure it breaks nicely
+    textAlign: 'center',
+    whiteSpace: 'normal', // Allow line breaks
     '&:hover': {
-      color: 'red', // Change text color on hover
+      color: 'red',
     },
   },
 };
