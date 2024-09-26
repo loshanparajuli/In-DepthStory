@@ -28,7 +28,8 @@ export default function Home() {
           <CoreFeature/>
           <Package/> 
           <Marquee/>
-          // <Yellobook/>
+       {/* <Yellobook/> */}
+    
       
           <ServiceSection />
           {/* <Feature/> */}
