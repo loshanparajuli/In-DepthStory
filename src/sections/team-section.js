@@ -11,6 +11,8 @@ import Member4 from 'assets/team/member-5.png';
 import Member2 from 'assets/team/member-6.png';
 import Member7 from 'assets/team/member-7.png';
 import Member8 from 'assets/team/member-8.png';
+import Member9 from 'assets/team/member-9.png';
+import Member10 from 'assets/team/member-10.png';
 
 const data = [
   {
@@ -74,6 +76,57 @@ const data = [
     ],
   },
   {
+    id: 8,
+    imgSrc: Member8,
+    altText: 'Amit Khanal',
+    title: 'Amit Khanal',
+    designation: 'Lead Researcher',
+    socialProfile: [
+  
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/amit_abhiyanta071/',
+        icon: <FaInstagram />,
+      },
+      {
+        id: 1,
+        name: 'facebook',
+        path: 'https://www.facebook.com/amitc.khanal.7',
+        icon: <FaFacebookF />,
+      }
+    ],
+  },
+  {
+    id: 6,
+    imgSrc: Member6,
+    altText: 'Loshan Parajuli',
+    title: 'Loshan Parajuli',
+    designation: 'Data Analyst',
+    socialProfile: [
+     
+      {
+        id: 2,
+        name: 'linkediin',
+        path: 'https://www.linkedin.com/in/loshanparajuli/',
+        icon: <FaLinkedin />,
+      },
+      {
+        id: 3,
+        name: 'youtube',
+        path: 'https://www.youtube.com/@whylosh/',
+        icon: <FaYoutube />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/whylosh/',
+        icon: <FaInstagram />,
+      }
+    ],
+  },
+
+  {
     id: 4,
     imgSrc: Member4,
     altText: 'Suraj Poudel',
@@ -106,6 +159,45 @@ const data = [
     ],
   },
   {
+    id: 1,
+    imgSrc: Member9,
+    altText: 'Aadaarsh Kapali',
+    title: 'Aadaarsh Kapali',
+    designation: 'Video Editor',
+    socialProfile: [
+      {
+        id: 1,
+        name: 'facebook',
+        path: 'https://www.facebook.com/newa.aadarsh',
+        icon: <FaFacebookF />,
+      },
+      
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/aadarshkapali/',
+        icon: <FaInstagram />,
+      },
+    ],
+  },
+  {
+    id: 1,
+    imgSrc: Member10,
+    altText: 'Simon Shrestha',
+    title: 'Simon Shrestha',
+    designation: 'Video Editor',
+    socialProfile: [
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/_simon.shrestha/',
+        icon: <FaInstagram />,
+      },
+    ],
+  },
+ 
+  
+  {
     id: 5,
     imgSrc: Member5,
     altText: 'Manish Rai',
@@ -122,41 +214,22 @@ const data = [
     ],
   },
   {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Loshan Parajuli',
-    title: 'Loshan Parajuli',
-    designation: 'Data Analyst',
+    id: 1,
+    imgSrc: Member10,
+    altText: 'Abishek Basnet',
+    title: 'Abishek Basnet',
+    designation: 'Producer',
     socialProfile: [
-     
       {
-        id: 2,
-        name: 'linkediin',
-        path: 'https://www.linkedin.com/in/loshanparajuli/',
-        icon: <FaLinkedin />,
+        id: 1,
+        name: 'facebook',
+        path: 'https://www.facebook.com/abeeshake.bassnet.5',
+        icon: <FaFacebookF />,
       },
       {
         id: 3,
         name: 'instagram',
-        path: 'https://www.youtube.com/@whylosh/',
-        icon: <FaYoutube />,
-      },
-    ],
-  },
-
-
-  {
-    id: 8,
-    imgSrc: Member8,
-    altText: 'Alka Khanal',
-    title: 'Amit Khanal',
-    designation: 'Lead Researcher',
-    socialProfile: [
-  
-      {
-        id: 3,
-        name: 'instagram',
-        path: 'https://www.instagram.com/amit_abhiyanta071/',
+        path: 'https://www.instagram.com/abeeshake99/',
         icon: <FaInstagram />,
       },
     ],
