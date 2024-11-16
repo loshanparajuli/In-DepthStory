@@ -161,8 +161,8 @@ const data = [
   {
     id: 1,
     imgSrc: Member9,
-    altText: 'Aadaarsh Kapali',
-    title: 'Aadaarsh Kapali',
+    altText: 'Aadarsh Kapali',
+    title: 'Aadarsh Kapali',
     designation: 'Video Editor',
     socialProfile: [
       {
