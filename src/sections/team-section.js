@@ -13,7 +13,7 @@ import Member7 from 'assets/team/member-7.png';
 import Member8 from 'assets/team/member-8.png';
 import Member9 from 'assets/team/member-9.png';
 import Member10 from 'assets/team/member-10.png';
-
+import Member11 from 'assets/team/member-11.png';
 const data = [
   {
     id: 1,
@@ -215,7 +215,7 @@ const data = [
   },
   {
     id: 1,
-    imgSrc: Member10,
+    imgSrc: Member11,
     altText: 'Abishek Basnet',
     title: 'Abishek Basnet',
     designation: 'Producer',
