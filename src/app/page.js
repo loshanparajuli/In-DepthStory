@@ -28,10 +28,8 @@ export default function Home() {
           <Banner/>
           <CoreFeature/>
           <Package/> 
-          <Marquee/>
+            {/*  <Marquee/>   */}
 
-    
-      
           <ServiceSection />
           {/* <Feature/> */}
       
