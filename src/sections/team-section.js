@@ -102,7 +102,7 @@ const data = [
     imgSrc: Member6,
     altText: 'Loshan Parajuli',
     title: 'Loshan Parajuli',
-    designation: 'Data Analyst',
+    designation: 'Strategist',
     socialProfile: [
      
       {
@@ -138,7 +138,7 @@ const data = [
         
         id: 3,
         name: 'Portfolio',
-        path: 'https://www.suraj-paudel.info.np',
+        path: 'https://www.beyondvisuals.art',
         icon: <FaPen />,
       },
       {
