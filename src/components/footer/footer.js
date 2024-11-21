@@ -40,7 +40,10 @@ export default function Footer() {
             </nav>
           </Box>
           <Text sx={styles.footer.additionalInfo}>
-            सूचना विभाग दर्ता नं: १११-१११११ | Chairman and Editor-in-Chief: Sudip Bhai Subedi
+            सूचना विभाग दर्ता नं: (Processing) | Chairman and Editor-in-Chief: Sudip Bhai Subedi
+          </Text>
+                 <Text sx={styles.footer.additionalInfo}>
+           Contact us: +977 9860934654 
           </Text>
           <Text sx={styles.footer.copyright}>
             Copyright &copy; {new Date().getFullYear()} IDS Media Network | Balkhu, Kathmandu
