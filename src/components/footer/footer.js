@@ -39,24 +39,12 @@ export default function Footer() {
               ))}
             </nav>
           </Box>
-          <Text sx={styles.footer.copyright}>
-            Copyright &copy; {new Date().getFullYear()} IDS Media Network
+          <Text sx={styles.footer.additionalInfo}>
+            सूचना विभाग दर्ता नं: १११-१११११ | Chairman and Editor-in-Chief: Sudip Bhai Subedi
           </Text>
-
-                <Text>
-    Co-Developed at{' '}
-    <a 
-      href="https://www.youtube.com/whylosh" 
-      target="_blank" 
-      rel="noopener noreferrer"
-      style={{ color: 'red'}}
-    >
-      whyl
-    </a>
-  </Text>
-        
-                 
-      
+          <Text sx={styles.footer.copyright}>
+            Copyright &copy; {new Date().getFullYear()} IDS Media Network | Balkhu, Kathmandu
+          </Text>
         </Box>
       </Container>
     </footer>
@@ -84,7 +72,13 @@ const styles = {
         flexWrap: 'wrap',
       },
     },
-
+    additionalInfo: {
+      fontSize: [1, '15px'],
+      color: 'text',
+      mt: 3,
+      mb: 2,
+      lineHeight: 1.6,
+    },
     link: {
       fontSize: [1, '15px'],
       color: 'text',
@@ -130,7 +124,6 @@ const styles = {
         fontWeight: 700,
         mb: [2, null, null, null, '15px'],
       },
-
       p: {
         fontSize: [1, '15px'],
         fontWeight: 400,
