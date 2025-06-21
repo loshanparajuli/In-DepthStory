@@ -20,7 +20,7 @@ const data = [
     imgSrc: Member1,
     altText: 'Sudip Bhai Subedi',
     title: 'Sudip Bhai Subedi',
-    designation: 'Creative Lead',
+    designation: 'CEO',
     socialProfile: [
       {
         id: 1,
@@ -44,10 +44,10 @@ const data = [
   },
   {
     id: 2,
-    imgSrc: Member2,
-    altText: 'Deeksan Siwakoti',
-    title: 'Deekshan Shiwakoti',
-    designation: 'Retention Specialist',
+    imgSrc: Member11,
+    altText: 'Abhishek Basnet',
+    title: 'Abhishel Basnet',
+    designation: 'Social Media Manager',
     socialProfile: [
     
       {
@@ -63,7 +63,7 @@ const data = [
     imgSrc: Member3,
     altText: 'Sudarshan Bhai Subedi',
     title: 'Sudarshan Bhai Subedi',
-    designation: 'Lead Presentor',
+    designation: 'Vox Pop Presentor',
     socialProfile: [
       {
         
@@ -80,7 +80,7 @@ const data = [
     imgSrc: Member8,
     altText: 'Amit Khanal',
     title: 'Amit Khanal',
-    designation: 'Lead Researcher',
+    designation: 'Head of Content',
     socialProfile: [
   
       {
@@ -102,7 +102,7 @@ const data = [
     imgSrc: Member6,
     altText: 'Loshan Parajuli',
     title: 'Loshan Parajuli',
-    designation: 'Strategist',
+    designation: 'Content Curator and Researcher',
     socialProfile: [
      
       {
@@ -131,7 +131,7 @@ const data = [
     imgSrc: Member4,
     altText: 'Suraj Poudel',
     title: 'Suraj Poudel',
-    designation: 'Visual Specialist',
+    designation: 'Head of Production',
     socialProfile: [
   
       {
@@ -161,8 +161,8 @@ const data = [
   {
     id: 1,
     imgSrc: Member9,
-    altText: 'Aadarsh Kapali',
-    title: 'Aadarsh Kapali',
+    altText: 'Gaurav Joshi',
+    title: 'Gaurav Joshi',
     designation: 'Video Editor',
     socialProfile: [
       {
@@ -216,9 +216,9 @@ const data = [
   {
     id: 1,
     imgSrc: Member11,
-    altText: 'Abishek Basnet',
-    title: 'Abishek Basnet',
-    designation: 'Producer',
+    altText: 'Raaj Shrestha',
+    title: 'Raaj Shrestha',
+    designation: 'Video Editor',
     socialProfile: [
       {
         id: 1,
