@@ -42,6 +42,36 @@ const data = [
       },
     ],
   },
+
+   {
+    id: 6,
+    imgSrc: Member6,
+    altText: 'Loshan Parajuli',
+    title: 'Loshan Parajuli',
+    designation: 'Content Curator and Researcher',
+    socialProfile: [
+     
+      {
+        id: 2,
+        name: 'linkediin',
+        path: 'https://www.linkedin.com/in/loshanparajuli/',
+        icon: <FaLinkedin />,
+      },
+      {
+        id: 3,
+        name: 'youtube',
+        path: 'https://www.youtube.com/@whylosh/',
+        icon: <FaYoutube />,
+      },
+      {
+        id: 3,
+        name: 'instagram',
+        path: 'https://www.instagram.com/whylosh/',
+        icon: <FaInstagram />,
+      }
+    ],
+  },
+  
   {
     id: 2,
     imgSrc: Member11,
@@ -53,7 +83,7 @@ const data = [
       {
         id: 3,
         name: 'instagram',
-        path: 'https://www.instagram.com/beingdeekshan/',
+        path: 'https://www.instagram.com/abeeshake99/',
         icon: <FaInstagram />,
       },
     ],
@@ -97,35 +127,7 @@ const data = [
       }
     ],
   },
-  {
-    id: 6,
-    imgSrc: Member6,
-    altText: 'Loshan Parajuli',
-    title: 'Loshan Parajuli',
-    designation: 'Content Curator and Researcher',
-    socialProfile: [
-     
-      {
-        id: 2,
-        name: 'linkediin',
-        path: 'https://www.linkedin.com/in/loshanparajuli/',
-        icon: <FaLinkedin />,
-      },
-      {
-        id: 3,
-        name: 'youtube',
-        path: 'https://www.youtube.com/@whylosh/',
-        icon: <FaYoutube />,
-      },
-      {
-        id: 3,
-        name: 'instagram',
-        path: 'https://www.instagram.com/whylosh/',
-        icon: <FaInstagram />,
-      }
-    ],
-  },
-
+ 
   {
     id: 4,
     imgSrc: Member4,
@@ -165,17 +167,11 @@ const data = [
     title: 'Gaurav Joshi',
     designation: 'Video Editor',
     socialProfile: [
-      {
-        id: 1,
-        name: 'facebook',
-        path: 'https://www.facebook.com/newa.aadarsh',
-        icon: <FaFacebookF />,
-      },
       
       {
         id: 3,
         name: 'instagram',
-        path: 'https://www.instagram.com/aadarshkapali/',
+        path: 'https://www.instagram.com/_idont_knox/',
         icon: <FaInstagram />,
       },
     ],
@@ -223,13 +219,13 @@ const data = [
       {
         id: 1,
         name: 'facebook',
-        path: 'https://www.facebook.com/abeeshake.bassnet.5',
+        path: '',
         icon: <FaFacebookF />,
       },
       {
         id: 3,
         name: 'instagram',
-        path: 'https://www.instagram.com/abeeshake99/',
+        path: '',
         icon: <FaInstagram />,
       },
     ],
@@ -241,7 +237,7 @@ const data = [
     imgSrc: Member7,
     altText: 'Alka Bista',
     title: 'Alka Bista',
-    designation: 'Research and Brainstroming',
+    designation: 'Researcher',
     socialProfile: [
   
       {
